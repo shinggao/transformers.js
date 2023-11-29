@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import LanguageSelector from './components/LanguageSelector';
 import Progress from './components/Progress';
+import colorScheme from './images/colorscheme.png';
 
 import './App.css'
 
@@ -12,7 +13,7 @@ function App() {
   const [progressItems, setProgressItems] = useState([]);
 
   // Inputs and outputs
-  const [input, setInput] = useState('I love walking my dog.');
+  const [input, setInput] = useState('Hello, world. I love avocados and lawyers.');
   const [sourceLanguage, setSourceLanguage] = useState('eng_Latn');
   const [targetLanguage, setTargetLanguage] = useState('fra_Latn');
   const [output, setOutput] = useState('');
@@ -92,13 +93,21 @@ function App() {
 
   return (
     <>
-      <h1>Transformers.js</h1>
-      <h2>ML-powered multilingual translation in React!</h2>
+      <h1>Avo\Lingo</h1>
+      <h2>
+          ML-powered multilingual translation in React.
+      </h2>
+      <h2>
+        HF Model: Xenova/nllb-200-distilled-600M
+      </h2>
+      <h2>
+          Shing's first website :000 Deployed on Hugging Face.
+      </h2>
 
       <div className='container'>
         <div className='language-container'>
-          <LanguageSelector type={"Source"} defaultLanguage={"eng_Latn"} onChange={x => setSourceLanguage(x.target.value)} />
-          <LanguageSelector type={"Target"} defaultLanguage={"fra_Latn"} onChange={x => setTargetLanguage(x.target.value)} />
+          <LanguageSelector type={"From"} defaultLanguage={"eng_Latn"} onChange={x => setSourceLanguage(x.target.value)} />
+          <LanguageSelector type={"To"} defaultLanguage={"fra_Latn"} onChange={x => setTargetLanguage(x.target.value)} />
         </div>
 
         <div className='textbox-container'>
@@ -119,6 +128,7 @@ function App() {
           </div>
         ))}
       </div>
+      <img src={colorScheme} alt="Avocado on Toast color scheme"/>
     </>
   )
 }

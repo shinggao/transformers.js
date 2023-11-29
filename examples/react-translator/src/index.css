@@ -1,9 +1,10 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: OCR A Std, monospace;
   line-height: 1.5;
   font-weight: 400;
-  color: #213547;
-  background-color: #ffffff;
+  color: #a44d1e;
+  background-color: #b8be3c;
+  background-image: url(https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/69037/cute-avocado-clipart-xl.png);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,13 +22,20 @@ body {
 }
 
 h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
   font-size: 3.2em;
-  line-height: 1;
+  line-height: 2;
+  border-radius: 25px;
+  background-color: #dbdb62;
+  text-shadow: 2px 2px #250000;
 }
 
 h1,
 h2 {
   margin: 8px;
+  border-radius: 25px;
+  background-color: #dbdb62;
 }
 
 select {
@@ -42,7 +50,13 @@ textarea {
 button {
   padding: 0.6em 1.2em;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 700;
+  border-radius: 32px;
+  border: 3px solid transparent;
+  font-size: 1em;
+  font-family: inherit;
+  color: #6f2700;
+  background-color: #f7eaa6;
 }
 
 button[disabled] {
@@ -50,20 +64,21 @@ button[disabled] {
 }
 
 select,
-textarea,
-button {
+textarea {
   border-radius: 8px;
-  border: 1px solid transparent;
-  font-size: 1em;
+  border: 3px solid transparent;
+  font-size: 1.1em;
+  font-weight: 550;
   font-family: inherit;
-  background-color: #f9f9f9;
+  color: #6e2701;
+  background-color: #f7eaa6;
   transition: border-color 0.25s;
 }
 
 select:hover,
 textarea:hover,
 button:not([disabled]):hover {
-  border-color: #646cff;
+  border-color: #19ba39;
 }
 
 select:focus,

@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: OCR A Std, monospace;
+  line-height: 1.5;
+  font-weight: 550;
+  color: #a44d1e;
 }
 
 .language-container {
@@ -22,14 +26,15 @@
 }
 
 .language-selector>select {
+  font-weight: 100;
   width: 150px;
 }
 
 .progress-container {
   position: relative;
   font-size: 14px;
-  color: white;
-  background-color: #e9ecef;
+  color: #c78337;
+  background-color: #c78337;
   border: solid 1px;
   border-radius: 8px;
   text-align: left;
@@ -43,7 +48,7 @@
   width: 1%;
   height: 100%;
   overflow: hidden;
-  background-color: #007bff;
+  background-color: #19ba39;
   white-space: nowrap;
 }
 

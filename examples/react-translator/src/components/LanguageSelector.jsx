@@ -212,7 +212,7 @@ const LANGUAGES = {
 export default function LanguageSelector({ type, onChange, defaultLanguage }) {
   return (
     <div className='language-selector'>
-      <label>{type}: </label>
+      <label>{type} </label>
       <select onChange={onChange} defaultValue={defaultLanguage}>
         {Object.entries(LANGUAGES).map(([key, value]) => {
           return <option key={key} value={value}>{key}</option>
