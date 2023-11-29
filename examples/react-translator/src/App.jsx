@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import LanguageSelector from './components/LanguageSelector';
 import Progress from './components/Progress';
 import colorScheme from './images/colorscheme.png';
+import { Link } from 'react-router-dom';
 
 import './App.css'
 
@@ -101,7 +102,7 @@ function App() {
         HF Model: Xenova/nllb-200-distilled-600M
       </h2>
       <h2>
-          Shing's first website :000 Deployed on Hugging Face.
+          Shing's first website :000 😭🎉🥹🥳 Deployed on AWS Amplify.
       </h2>
 
       <div className='container'>
@@ -120,7 +121,10 @@ function App() {
 
       <div className='progress-bars-container'>
         {ready === false && (
-          <label>Loading models... (only run once)</label>
+          <label>
+              Loading models...
+              Click here if taking too long. [https://huggingface.co/spaces/Xenova/react-translator]
+          </label>
         )}
         {progressItems.map(data => (
           <div key={data.file}>
